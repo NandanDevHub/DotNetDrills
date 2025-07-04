@@ -1,24 +1,7 @@
----
-description: >-
-  DotNetDrills is a carefully curated collection of .NET interview questions
-  designed to help developers prepare for technical interviews, refresh their
-  knowledge, and gain a deeper understanding of the
-icon: rocket-launch
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: false
-  outline:
-    visible: false
-  pagination:
-    visible: false
----
 
-# DotNetDrills
+# :racehorse: DotNetDrills
+
+DotNetDrills is a carefully curated collection of .NET interview questions designed to help developers prepare for technical interviews, refresh their knowledge, and gain a deeper understanding of the
 
 ### 📌 What's Inside
 
