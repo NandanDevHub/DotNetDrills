@@ -1,18 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Advantages & Limitations of Object-Oriented Programming (OOP)
 
 When asked **“What are the advantages of OOP?”** in interviews, your answer should highlight how **encapsulation, inheritance, polymorphism, and abstraction** provide concrete benefits.
