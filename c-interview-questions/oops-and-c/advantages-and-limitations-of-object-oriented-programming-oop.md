@@ -13,7 +13,7 @@ layout:
     visible: true
 ---
 
-# Advantages of Object-Oriented Programming (OOP)
+# Advantages & Limitations of Object-Oriented Programming (OOP)
 
 When asked **“What are the advantages of OOP?”** in interviews, your answer should highlight how **encapsulation, inheritance, polymorphism, and abstraction** provide concrete benefits.
 
@@ -88,3 +88,67 @@ A method named `Run()` can have different implementations: one for `Computer.Run
 * Can you give an example of **inheritance** in C#?
 * How does modularity help in large-scale applications?
 * What are the challenges or downsides of inheritance?
+
+## Limitations of Object-Oriented Programming (OOP)
+
+#### Interview-Ready Explanation:
+
+> While OOP has many advantages, it also comes with some limitations, especially when applied inappropriately.
+
+***
+
+#### 1. **Not Ideal for Small or Simple Applications**
+
+* Implementing full OOP concepts (like inheritance, polymorphism, encapsulation) **requires upfront planning and design effort**.
+* For **small or quick projects**, this overhead might be unnecessary and can slow down development.
+* Sometimes **simple procedural code** or lightweight approaches can be more efficient.
+
+> **Example:**\
+> If you need to deliver a very small app quickly, spending time designing base and derived classes, interfaces, and abstract classes might be overkill.
+
+***
+
+#### 2. **Planning and Analysis Overhead**
+
+* Proper OOP design involves **analyzing the domain carefully**:
+  * Deciding what classes are base classes
+  * Which classes derive from others
+  * Defining clear responsibilities
+* This **planning takes time** and requires a good understanding of the problem domain.
+* If this is rushed or ignored, it can lead to **overly complex or rigid designs**.
+
+***
+
+#### 3. **Potential Performance Overhead**
+
+* OOP abstractions like virtual method calls and indirections may introduce slight **runtime overhead** compared to procedural code.
+* For performance-critical systems, this might be a concern (though often negligible).
+
+***
+
+#### 4. **Can Lead to Over-Engineering**
+
+* Sometimes developers overuse OOP, leading to **complex hierarchies** and **unnecessary abstractions**.
+* This can make code harder to understand and maintain.
+
+***
+
+#### Summary for Interviews
+
+* **OOP is best suited for medium to large, complex systems where scalability, maintainability, and modularity are priorities.**
+* **For small, quick projects, simple procedural programming or minimal OOP may be more practical.**
+* Emphasize **balancing planning and delivery timelines** in real-world scenarios.
+
+***
+
+#### Sample concise answer for interviews:
+
+> “The limitations of OOP include the upfront time and effort required for proper planning and design, which may not be suitable for small or quick projects. Over-engineering and performance overhead can also be drawbacks. So, OOP is more beneficial for larger, scalable applications rather than small, simple ones.”
+
+***
+
+#### Possible follow-up interview questions
+
+* How do you decide when to use OOP vs procedural programming?
+* Can you give an example of over-engineering in OOP?
+* How do you avoid unnecessary complexity in OOP design?

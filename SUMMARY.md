@@ -7,4 +7,6 @@
 * [OOPS and C#](c-interview-questions/oops-and-c/README.md)
   * [C# vs .NET](c-interview-questions/oops-and-c/c-vs-.net.md)
   * [OOPS](c-interview-questions/oops-and-c/oops.md)
-  * [Advantages of Object-Oriented Programming (OOP)](c-interview-questions/oops-and-c/advantages-of-object-oriented-programming-oop.md)
+  * [Advantages & Limitations of Object-Oriented Programming (OOP)](c-interview-questions/oops-and-c/advantages-and-limitations-of-object-oriented-programming-oop.md)
+* [Abstract Class and Interface](c-interview-questions/abstract-class-and-interface.md)
+* [Abstract Classes vs Interfaces in C#](c-interview-questions/abstract-classes-vs-interfaces-in-c.md)
