@@ -12,7 +12,7 @@
 #### Example:
 
 ```csharp
-csharpCopyabstract class Animal
+abstract class Animal
 {
     public void Eat()
     {
@@ -53,7 +53,7 @@ class Cat : Animal
 #### Example:
 
 ```csharp
-csharpCopyinterface IFlyable
+interface IFlyable
 {
     void Fly();
 }
@@ -95,7 +95,7 @@ class Duck : IFlyable, ISwimmable
 
 ***
 
-## 🔹 Key Differences Between Abstract Classes and Interfaces
+## Key Differences Between Abstract Classes and Interfaces
 
 | Feature                    | Abstract Class                                                   | Interface                                                                           |
 | -------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
@@ -109,7 +109,7 @@ class Duck : IFlyable, ISwimmable
 
 ***
 
-## 🔹 Interview Notes / Talking Points
+## Interview Notes
 
 * Abstract classes let you **share code** among related classes.
 * Interfaces provide **a contract for behavior**, supporting multiple inheritance.
@@ -120,13 +120,13 @@ class Duck : IFlyable, ISwimmable
 
 ***
 
-## 🔹 Sample Interview Answer
+## Sample Interview Answer
 
 > “An **abstract class** allows you to define some default behavior and force derived classes to implement certain methods. It supports code reuse and can contain fields and constructors but supports only single inheritance. On the other hand, an **interface** defines a contract with no implementation (mostly), supports multiple inheritance, and is used to specify capabilities that unrelated classes can implement. Choosing between them depends on whether you need shared base behavior (abstract class) or just a contract for capabilities (interface).”
 
 ***
 
-## 🔹 Common Follow-up Questions
+## Common Follow-up Questions
 
 * Can a class implement multiple interfaces?
 * Can an abstract class implement an interface?
@@ -134,7 +134,7 @@ class Duck : IFlyable, ISwimmable
 * What are default interface methods in C# 8.0+?
 * Can interfaces have fields or constructors?
 
-## 🔹 When to Use **Interface** vs **Abstract Class** in Real Applications
+## When to Use **Interface** vs **Abstract Class** in Real Applications
 
 ***
 
@@ -149,7 +149,7 @@ class Duck : IFlyable, ISwimmable
 * You create an interface `IEmployee` that declares these properties or methods:
 
 ```csharp
-csharpCopyinterface IEmployee
+interface IEmployee
 {
     string Email { get; set; }
     string Manager { get; set; }
@@ -161,7 +161,7 @@ csharpCopyinterface IEmployee
 * Both `PermanentEmployee` and `ContractualEmployee` **implement this interface**:
 
 ```csharp
-csharpCopyclass PermanentEmployee : IEmployee
+class PermanentEmployee : IEmployee
 {
     public string Email { get; set; }
     public string Manager { get; set; }
@@ -197,7 +197,7 @@ class ContractualEmployee : IEmployee
 * You know some behavior is common to all employees, but some specifics depend on employee type or gender.
 
 ```csharp
-csharpCopyabstract class EmployeeDressCode
+abstract class EmployeeDressCode
 {
     // Concrete method: same for all employees
     public void DressColor()
@@ -255,7 +255,7 @@ class FemaleEmployeeDressCode : EmployeeDressCode
 
 ***
 
-## 🔹 Interview Sample Answer
+## Interview Sample Answer
 
 > "Use **interfaces** when you want to define a contract that multiple unrelated classes must follow, especially when you only know _what_ methods or properties should exist but not _how_ they will be implemented. For example, in a company, both permanent and contractual employees must have email and manager, but their implementation might differ, so an `IEmployee` interface fits well.
 >

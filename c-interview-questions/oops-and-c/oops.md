@@ -1,6 +1,6 @@
 # OOPS
 
-## 🔹 What is Object-Oriented Programming (OOP)?
+## What is Object-Oriented Programming (OOP)?
 
 #### Interview-Ready Explanation:
 
@@ -12,7 +12,7 @@
 
 ***
 
-## 🔹 Core Concepts of OOP
+## Core Concepts of OOP
 
 | Concept           | Description                                                                                                                                            | Interview Notes / Examples                                                |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
@@ -25,7 +25,7 @@
 
 ***
 
-## 🔹 How OOP Solves Problems
+## How OOP Solves Problems
 
 * OOP maps real-world entities to software objects.
 * Improves **code organization**, **reusability**, and **maintainability**.
@@ -34,10 +34,10 @@
 
 ***
 
-## 🔹 Simple C# Example Illustrating OOP
+## Simple C# Example Illustrating OOP
 
 ```csharp
-csharpCopy// Class: blueprint for Car
+// Class: blueprint for Car
 class Car
 {
     // Encapsulated field
@@ -80,19 +80,7 @@ class Program
 
 ***
 
-## 🔹 Interviewer Tips: What Interviewers Look For
-
-* Can you **explain each OOP concept** clearly with examples?
-* Do you understand the difference between **class and object**?
-* Can you discuss how **encapsulation** improves security?
-* Can you describe **inheritance** and its pros and cons?
-* Can you explain **polymorphism** and give real-world examples?
-* Do you know the difference between **abstract classes and interfaces**?
-* Can you relate OOP concepts to C# syntax and features?
-
-***
-
-## 🔹 Common Follow-up Questions
+## Common Follow-up Questions
 
 * What is the difference between **method overloading** and **method overriding**?
 * How does C# implement **polymorphism**?

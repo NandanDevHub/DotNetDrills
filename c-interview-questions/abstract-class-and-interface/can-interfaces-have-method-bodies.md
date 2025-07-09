@@ -1,6 +1,4 @@
-# Interfaces Can You?
-
-## 🔹 Can Interfaces Have Method Bodies?
+# Can Interfaces Have Method Bodies?
 
 #### Traditional Interfaces (Before C# 8.0)
 
@@ -9,7 +7,7 @@
 * Example:
 
 ```csharp
-csharpCopyinterface IEmployee
+interface IEmployee
 {
     void Role();  // Declaration only, no body allowed
 }
@@ -26,7 +24,7 @@ csharpCopyinterface IEmployee
 Example:
 
 ```csharp
-csharpCopyinterface IEmployee
+interface IEmployee
 {
     void Role()  // Method with a body inside interface
     {
@@ -71,74 +69,3 @@ csharpCopyinterface IEmployee
 
 > “Yes, starting with C# 8.0, interfaces can have method bodies called default interface methods. This feature was introduced to allow API designers to add new functionality to interfaces without breaking existing implementations. For example, if an interface originally had only method declarations, and later we want to provide a default implementation, default interface methods allow us to do that. However, when starting a new project, if you need method bodies, it’s generally better to use abstract classes for clearer design and maintainability.”
 
-## 🔹 Can You Create an Instance of an Abstract Class or Interface?
-
-#### Interview-Ready Answer:
-
-> **No, you cannot create an instance of an abstract class or an interface.**
->
-> Both **abstract classes** and **interfaces** are designed to serve as <mark style="background-color:orange;">**base types**</mark>—they define a contract or a partial implementation for other classes to inherit or implement.
->
-> Because they are incomplete by design, the compiler will **throw an error** if you try to instantiate them directly.
->
-> For example:
->
-> ```csharp
-> csharpCopyIEmployee emp = new IEmployee();         // Compile-time error
-> Employee emp = new Employee();           // If Employee is abstract, compile-time error
-> ```
->
-> You must create an instance of a **concrete class** that derives from the abstract class or implements the interface.
-
-***
-
-#### Why?
-
-* **Abstract classes** may have abstract methods without implementation, so they can't be fully instantiated.
-* **Interfaces** only declare method signatures with no implementation (traditionally), so they can't create usable objects.
-* Their role is to **provide structure and enforce contracts** for derived classes.
-
-***
-
-#### Bonus: How to use them?
-
-```csharp
-csharpCopy abstract class Employee
-{
-    public abstract void Work();
-}
-
-interface IEmployee
-{
-    void Work();
-}
-
-class PermanentEmployee : Employee, IEmployee
-{
-    public override void Work()
-    {
-        Console.WriteLine("Working permanently");
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        // Cannot create instance of Employee or IEmployee directly
-        // Employee e = new Employee();    // Error
-        // IEmployee i = new IEmployee();  // Error
-
-        PermanentEmployee pe = new PermanentEmployee(); // OK
-        pe.Work();
-    }
-}
-```
-
-***
-
-#### Summary for Interview
-
-* Both **abstract classes** and **interfaces** cannot be instantiated.
-* They exist to **be inherited or implemented** by concrete classes.
-* Trying to instantiate them directly results in **compile-time errors**.

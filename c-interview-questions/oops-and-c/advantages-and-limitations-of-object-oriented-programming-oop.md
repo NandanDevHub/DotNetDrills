@@ -60,13 +60,13 @@ A method named `Run()` can have different implementations: one for `Computer.Run
 
 ***
 
-## 🔹 Sample Concise Interview Answer
+## Sample Concise Interview Answer
 
 > "The main advantages of OOP are code reusability through inheritance, which saves time and effort; flexibility via polymorphism, allowing methods to behave differently; security through encapsulation by hiding data and exposing controlled access; scalability to grow applications easily; and modularity, which makes debugging and maintenance simpler."
 
 ***
 
-## 🔹 Follow-up Interview Questions to Prepare
+## Follow-up Interview Questions
 
 * Can you explain **method overloading vs overriding** in the context of polymorphism?
 * How does **encapsulation** improve security?

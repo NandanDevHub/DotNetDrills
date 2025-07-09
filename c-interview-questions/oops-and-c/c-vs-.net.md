@@ -2,7 +2,7 @@
 
 ## Difference Between C# and .NET
 
-**✅ Interview-Ready Answer:**
+**Interview-Ready Answer:**
 
 > **C#** is a **programming language** developed by Microsoft.
 >
@@ -13,7 +13,7 @@
 >
 > So, C# is the language, and .NET is the ecosystem in which that language usually operates.
 
-**🔸 Key Terms Interviewers Expect You to Mention:**
+**🔸 Key Terms**
 
 | Term                                  | Why it's important in an interview                     |
 | ------------------------------------- | ------------------------------------------------------ |
@@ -25,22 +25,22 @@
 
 ***
 
-#### 🔹 Example Breakdown
+#### Example Breakdown
 
 **➤ Code 1: Just a Class**
 
 ```csharp
-csharpCopyclass Example { }
+class Example { }
 ```
 
-* ✅ Written in C#
-* 🔍 Even if it _looks_ like it doesn't use .NET, it actually **inherits** from `System.Object` implicitly.
-* 🔸 That means **every C# class** derives from .NET base class library (`System.Object`) unless you’re in very low-level environments.
+* Written in C#
+* Even if it _looks_ like it doesn't use .NET, it actually **inherits** from `System.Object` implicitly.
+* That means **every C# class** derives from .NET base class library (`System.Object`) unless you’re in very low-level environments.
 
 **➤ Code 2: Uses .NET Explicitly**
 
 ```csharp
-csharpCopyclass Example
+class Example
 {
     static void Main()
     {
@@ -49,15 +49,15 @@ csharpCopyclass Example
 }
 ```
 
-* ✅ Written in C#
-* ✅ Uses **`System.Console.Write`**, which comes from **.NET Framework Class Library**.
-* 🔥 Shows **how C# and .NET work together** in practical terms.
-* 🔸 `Main()` is the **entry point** of a C# program.
-* 🔸 `System.Console` is a **.NET type**, fully qualified with namespace `System`.
+* Written in C#
+* Uses **`System.Console.Write`**, which comes from **.NET Framework Class Library**.
+* Shows **how C# and .NET work together** in practical terms.
+* `Main()` is the **entry point** of a C# program.
+* `System.Console` is a **.NET type**, fully qualified with namespace `System`.
 
 ***
 
-#### 🔹 Real-World Analogy
+&#x20;Real-World Analogy
 
 > Think of **C# as English**, and **.NET as the library + stage** where you speak that language.
 >
@@ -65,7 +65,7 @@ csharpCopyclass Example
 
 ***
 
-#### 🧠 Deep Understanding: Why it's hard to use C# without .NET?
+#### Deep Understanding: Why it's hard to use C# without .NET?
 
 Because:
 
@@ -73,7 +73,7 @@ Because:
 * The **runtime (CLR)** is needed to run C# apps (unless you're using special tools like AOT compilation or IL2CPP in Unity)
 * Your code is compiled into **IL code**, not native machine code. CLR is needed to interpret and execute that.
 
-## 🔹 Common Language Runtime (CLR)
+## Common Language Runtime (CLR)
 
 #### What is CLR?
 
@@ -126,7 +126,7 @@ Because:
 If you compile this C# code:
 
 ```csharp
-csharpCopyclass Program
+class Program
 {
     static void Main()
     {
@@ -176,7 +176,7 @@ IL_000a: ret
 #### How this all ties in: A Visual Flow
 
 ```
-rustCopyC# Source Code --> C# Compiler --> IL + Metadata (Assembly) --> CLR (JIT Compiler) --> Native Machine Code --> Runs on CPU
+C# Source Code --> C# Compiler --> IL + Metadata (Assembly) --> CLR (JIT Compiler) --> Native Machine Code --> Runs on CPU
 ```
 
 ***
